@@ -7,6 +7,9 @@ function Navbar({show,setshow}){
         setshow(!show);}
             
         }>Home</button>
-        <button onClick={()=>navigate("/about")}>About</button>
+        <button onClick={()=>{navigate("/about");
+              setshow(!show);
+        }}
+        >About</button>
     </>)
 }export default Navbar;
